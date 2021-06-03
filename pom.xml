@@ -45,6 +45,16 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20210307</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.6</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -62,6 +72,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>appProducts</finalName>
     </build>
 
 </project>
