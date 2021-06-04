@@ -22,3 +22,4 @@ docker container logs localhost
 	//after 30s
 docker run -d -p 8089:8080 --name app --link localhost:mysql  shandar1997/expenses:app_jdk
 docker container logs app
+
