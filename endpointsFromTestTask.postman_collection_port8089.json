@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "c123a1ae-346a-44cc-9a4c-8ca462f4c74e",
+		"name": "endpoint",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8089/expenses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"date\": \"2021-04-27\",\r\n    \"amount\": 25.05,\r\n    \"currency\": \"UAH\",\r\n    \"product\": \"Sweets\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8089/expenses",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"expenses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8089/expenses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8089/expenses",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"expenses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8089/expenses?date=2024-04-25",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8089/expenses?date=2024-04-25",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"expenses"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2024-04-25"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8089/total?base=USD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8089/total?base=USD",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"total"
+					],
+					"query": [
+						{
+							"key": "base",
+							"value": "USD"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
