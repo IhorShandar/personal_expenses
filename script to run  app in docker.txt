@@ -1,6 +1,6 @@
 //create images and containers
 docker-compose up database
-	//after 30s
+	//after 30s (when database will start)
 docker-compose up jdk
 
 //create containers when you create images from docker-compose
